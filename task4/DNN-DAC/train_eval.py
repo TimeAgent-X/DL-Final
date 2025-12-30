@@ -84,6 +84,7 @@ def train(config, model, train_iter, dev_iter, test_iter):
         if flag:
             break
     writer.close()
+    print("Training finished")
     ## test(config, model, test_iter) @TimeAgent 未提供test文件，test无效
 
 ## @TimeAgent 未提供test文件，test无效
@@ -137,6 +138,7 @@ def save_test(config, model, data_iter):
     @TimeAgent
     保存为json文件
     """
+    print("Saving test results...")
     model.load_state_dict(torch.load(config.save_path))
     model.eval()
 
@@ -166,5 +168,6 @@ def save_test(config, model, data_iter):
             i = i + 1
     with open(test_save_path, 'w', encoding='utf-8') as f:
         json.dump(samples, f, indent=4, ensure_ascii=False)
+    print("Test results saved to:", test_save_path)
     return 0
 
