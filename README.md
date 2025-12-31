@@ -28,4 +28,5 @@ python task4\DNN-DAC\preprocess.py
 python task4\DNN-DAC\run.py --model TextCNN
 ```
 复现TextCNN测评结果
+
 ![alt text](temp/image.png)
