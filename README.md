@@ -33,7 +33,7 @@ python task4\DNN-DAC\run.py --model TextCNN
 ```
 复现TextCNN测评结果 @Acc 0.7835 
 
-![alt text](temp/image_TextCNN.png)
+<img src="temp/image_TextCNN.png" alt="alt text" style="zoom: 50%;" />
 
 #### Run Baseline-2 TextRCNN
 ```shell
@@ -41,4 +41,4 @@ python task4\DNN-DAC\run.py --model TextRCNN
 ```
 复现TextRCNN测评结果 @Acc 0.7809
 
-![alt text](temp/image_TextRCNN.png)
+<img src="temp/image_TextRCNN.png" alt="alt text" style="zoom:50%;" />
