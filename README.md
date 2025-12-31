@@ -17,6 +17,10 @@ The Task of DL-Final
 - 新增 save_test函数 `task4\DNN-DAC\train_eval.py` & `task4\DNN-DAC\run.py`，用于保存测试集结果,生成.json文件，用于提交评测
 - 因无test数据集标签，原test函数无效，仅需使用save_test函数生成.json文件
 - 运行`task4\DNN-DAC\run.py`后，自动train-eval-test，生成.json文件
+
+>[!Tip]
+>test输出`.json`文件位于task4\DNN-DAC\THUCNews\log\<MODEL_NAME>\<TIME>\IMCS-DAC_test.json。后续提交`IMCS-DAC_test.json`文件至https://tianchi.aliyun.com/competition/entrance/532044/information 进行测评。
+
 #### Run Preprocess
 进入DL-Final文件夹，所有命令基于此目录。
 使用下面命令预处理数据集
