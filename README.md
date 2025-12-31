@@ -3,7 +3,7 @@ The Task of DL-Final
 ## Progress
 
 - [x] Baseline-1
-- [ ] Baseline-2
+- [x] Baseline-2
 - [ ] Model-Change
 - [ ] New-Model
 - [ ] Report
