@@ -154,7 +154,7 @@ def save_test(config, model, data_iter):
 
     print("Time usage:", time_dif)
     
-    text_file_path = 'task4\IMCS-DAC\IMCS-DAC_test.json'
+    text_file_path = 'task4/IMCS-DAC/IMCS-DAC_test.json'
     path_ = config.log_path + '/' + time.strftime('%m-%d_%H.%M',  time.localtime())
     if not os.path.exists(path_):
         os.makedirs(path_)
