@@ -19,7 +19,7 @@ The Task of DL-Final
 - 运行`task4\DNN-DAC\run.py`后，自动train-eval-test，生成.json文件
 
 >[!Tip]
->test输出`.json`文件位于task4\DNN-DAC\THUCNews\log\<MODEL_NAME>\<TIME>\IMCS-DAC_test.json。后续提交`IMCS-DAC_test.json`文件至https://tianchi.aliyun.com/competition/entrance/532044/information 进行测评。
+>test输出`.json`文件位于`task4\DNN-DAC\THUCNews\log\<MODEL_NAME>\<TIME>\IMCS-DAC_test.json`。后续提交`IMCS-DAC_test.json`文件至https://tianchi.aliyun.com/competition/entrance/532044/information 进行测评。
 
 #### Run Preprocess
 进入DL-Final文件夹，所有命令基于此目录。
@@ -31,7 +31,7 @@ python task4\DNN-DAC\preprocess.py
 ```shell
 python task4\DNN-DAC\run.py --model TextCNN
 ```
-复现TextCNN测评结果
+复现TextCNN测评结果 @Acc 0.7835 
 
 ![alt text](temp/image_TextCNN.png)
 
@@ -39,6 +39,6 @@ python task4\DNN-DAC\run.py --model TextCNN
 ```shell
 python task4\DNN-DAC\run.py --model TextRCNN 
 ```
-复现TextRCNN测评结果
+复现TextRCNN测评结果 @Acc 0.7809
 
 ![alt text](temp/image_TextRCNN.png)
