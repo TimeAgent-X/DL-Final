@@ -29,4 +29,12 @@ python task4\DNN-DAC\run.py --model TextCNN
 ```
 复现TextCNN测评结果
 
-![alt text](temp/image.png)
+![alt text](temp/image_TextCNN.png)
+
+#### Run Baseline-2 TextRCNN
+```shell
+python task4\DNN-DAC\run.py --model TextRCNN 
+```
+复现TextRCNN测评结果
+
+![alt text](temp/image_TextRCNN.png)
