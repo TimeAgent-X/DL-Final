@@ -1,5 +1,8 @@
 # DL-Final
-The Task of DL-Final
+The Task of DL-Final.
+
+合并到主分支`main`请提交Pull requests.
+
 ## Progress
 
 - [x] Baseline-1
