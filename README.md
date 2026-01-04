@@ -1,12 +1,12 @@
 # DL-Final
 The Task of DL-Final.
 
-合并到主分支`main`请提交Pull requests.
+Fork本仓库，合并到主分支`main`请提交Pull requests.
 
 ## Progress
 
-- [x] Baseline-1
-- [x] Baseline-2
+- [x] Baseline-1 TextCNN
+- [x] Baseline-2 TextRCNN
 - [ ] Model-Change
 - [ ] New-Model
 - [ ] Report
@@ -78,4 +78,4 @@ python task4\DNN-DAC\run.py --model New_Model
 
 #### @[user-3]
 
-- 完成报告撰写......
+- 后续完成报告撰写......
