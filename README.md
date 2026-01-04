@@ -1,9 +1,12 @@
 # DL-Final
-The Task of DL-Final
+The Task of DL-Final.
+
+Fork本仓库，合并到主分支`main`请提交Pull requests.
+
 ## Progress
 
-- [x] Baseline-1
-- [x] Baseline-2
+- [x] Baseline-1 TextCNN
+- [x] Baseline-2 TextRCNN
 - [ ] Model-Change
 - [ ] New-Model
 - [ ] Report
@@ -42,3 +45,37 @@ python task4\DNN-DAC\run.py --model TextRCNN
 复现TextRCNN测评结果 @Acc 0.7809
 
 <img src="temp/image_TextRCNN.png" alt="alt text" style="zoom:50%;" />
+
+### @[user-1]
+
+#### Run Model_Change
+
+```shell
+python task4\DNN-DAC\run.py --model Model_Change
+```
+
+`Model_Change`测评结果 @Acc []
+
+> [!Tip] 
+> 测评截图存储路径及重命名：`temp/image_Model_Change.png`
+
+<img src="temp/image_Model_Change.png" alt="alt text" style="zoom:50%;" />
+
+### @[user-2]
+
+#### Run New_Model
+
+```shell
+python task4\DNN-DAC\run.py --model New_Model
+```
+
+`New_Model`测评结果 @Acc []
+
+> [!Tip] 
+> 测评截图存储路径及重命名：`temp/image_New_Model.png`
+
+<img src="temp/image_New_Model.png" alt="alt text" style="zoom:50%;" />
+
+#### @[user-3]
+
+- 后续完成报告撰写......
