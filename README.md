@@ -1,7 +1,7 @@
 # DL-Final
 The Task of DL-Final.
 
-Fork本仓库，合并到主分支`main`请提交Pull requests.
+Fork本仓库，建立新分支（如`reproduction`、`model_change`、`new_model`），合并到主分支`main`请提交Pull requests.
 
 ## Progress
 
