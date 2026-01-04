@@ -76,6 +76,6 @@ python task4\DNN-DAC\run.py --model New_Model
 
 <img src="temp/image_New_Model.png" alt="alt text" style="zoom:50%;" />
 
-#### @[user-3]
+### @[user-3]
 
 - 后续完成报告撰写......
