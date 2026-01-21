@@ -1,19 +1,18 @@
 # DL-Final
+
 The Task of DL-Final.
 
-Fork本仓库，建立新分支（如`reproduction`、`model_change`、`new_model`），合并到主分支`main`请提交Pull requests.
-
-## Progress
+## 1 Progress
 
 - [x] Baseline-1 TextCNN
 - [x] Baseline-2 TextRCNN
-- [ ] Model-Change
-- [ ] New-Model
+- [x] Model-Change
+- [x] New-Model
 - [ ] Report
 
-## Log
+## 2 Log
 
-### @TimeAgent
+### 2.1 @Yan（@TimeAgent-X）
 
 - 修复 TypeError `task4\DNN-DAC\preprocess.py` make_data，以适应现使用数据集格式
 - 修复 AssertionError `task4\DNN-DAC\preprocess.py` make_data，处理数据集脏数据，未知标签及空字符串""归类为'Other'
@@ -25,43 +24,58 @@ Fork本仓库，建立新分支（如`reproduction`、`model_change`、`new_mode
 >test输出`.json`文件位于`task4\DNN-DAC\THUCNews\log\<MODEL_NAME>\<TIME>\IMCS-DAC_test.json`。后续提交`IMCS-DAC_test.json`文件至https://tianchi.aliyun.com/competition/entrance/532044/information 进行测评。
 
 #### Run Preprocess
-进入DL-Final文件夹，所有命令基于此目录。
+
+进入`DL-Final`文件夹，所有命令基于此目录。
 使用下面命令预处理数据集
+
 ```shell
 python task4\DNN-DAC\preprocess.py
 ```
 #### Run Baseline-1 TextCNN
+
 ```shell
 python task4\DNN-DAC\run.py --model TextCNN
 ```
-复现TextCNN测评结果 @Acc 0.7835 
+复现 TextCNN 测评结果 **@Acc 0.7835** 
 
 <img src="temp/image_TextCNN.png" alt="alt text" style="zoom: 50%;" />
 
 #### Run Baseline-2 TextRCNN
+
 ```shell
 python task4\DNN-DAC\run.py --model TextRCNN 
 ```
-复现TextRCNN测评结果 @Acc 0.7809
+复现 TextRCNN 测评结果 **@Acc 0.7809**
 
 <img src="temp/image_TextRCNN.png" alt="alt text" style="zoom:50%;" />
 
-### @[user-1]
+### 2.2 @Zhou
 
-#### Run Model_Change
+#### BERT (Model_Change) - **New Best Model**
+
+> 引入了基于 BERT 的预训练模型，并针对显存限制（2.7GB）进行了深度优化。
+
+- **模型架构**: `bert-base-chinese`
+- **优化技术**: 开启梯度检查点 (Gradient Checkpointing)、使用 SGD 优化器以减少显存占用。
+- **性能**: **验证集**准确率达到 **80.64%**，F1 分数 **0.7346**。
+
+**运行命令**:
 
 ```shell
 python task4\DNN-DAC\run.py --model Model_Change
 ```
 
-`Model_Change`测评结果 @Acc []
+**Test结果**:
+最终生成的结果文件为 `task4/IMCS-DAC_test_predictions.json`。
+
+`Model_Change`测评结果 **@Acc 0.8006**
 
 > [!Tip] 
-> 测评截图存储路径及重命名：`temp/image_Model_Change.png`
+> 测评截图存储路径：`temp/image_Model_Change.png`
 
 <img src="temp/image_Model_Change.png" alt="alt text" style="zoom:50%;" />
 
-### @[user-2]
+### 2.3 @Wang （@Yan @TimeAgent-X）
 
 #### Run New_Model
 
@@ -69,13 +83,13 @@ python task4\DNN-DAC\run.py --model Model_Change
 python task4\DNN-DAC\run.py --model New_Model
 ```
 
-`New_Model`测评结果 @Acc []
+`New_Model`**最新**测评结果 **@Acc 0.8110**
 
 > [!Tip] 
-> 测评截图存储路径及重命名：`temp/image_New_Model.png`
+> 测评截图存储路径：`temp/image_New_Model.png`
 
 <img src="temp/image_New_Model.png" alt="alt text" style="zoom:50%;" />
 
-### @[user-3]
+### 2.4 @Chen
 
 - 后续完成报告撰写......
