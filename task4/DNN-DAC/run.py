@@ -26,6 +26,9 @@ if __name__ == '__main__':
     if model_name == 'FastText':
         from utils_fasttext import build_dataset, build_iterator, get_time_dif
         embedding = 'random'
+    elif model_name == 'Model_Change' or model_name == 'New_Model':
+        from utils_bert import build_dataset, build_iterator, get_time_dif
+        embedding = 'random'
     else:
         from utils import build_dataset, build_iterator, get_time_dif
 
@@ -46,9 +49,12 @@ if __name__ == '__main__':
     time_dif = get_time_dif(start_time)
     print("Time usage:", time_dif)
 
-    config.n_vocab = len(vocab)
+    print("Time usage:", time_dif)
+
+    if vocab is not None:
+        config.n_vocab = len(vocab)
     model = x.Model(config).to(config.device)
-    if model_name != 'Transformer':
+    if model_name != 'Transformer' and model_name != 'Model_Change' and model_name != 'New_Model':
         init_network(model)
     print(model.parameters)
     
