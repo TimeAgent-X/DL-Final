@@ -52,6 +52,7 @@ class DatasetIterater(object):
     def _to_tensor(self, datas):
         x = torch.LongTensor([_[0] for _ in datas]).to(self.device)
         y = torch.LongTensor([_[1] for _ in datas]).to(self.device)
+        # print(f"DEBUG: utils_bert x shape: {x.shape}")
         seq_len = torch.LongTensor([_[2] for _ in datas]).to(self.device)
         mask = torch.LongTensor([_[3] for _ in datas]).to(self.device)
         return (x, seq_len, mask), y
