@@ -2,6 +2,28 @@
 
 The Task of DL-Final.
 
+> **总体要求：**
+>
+> 1）请各位同学组成1-4人的小组在以下赛题中**任选其一**，每个小组只需提交一份实验报告。组内所有成员的得分相同。
+>
+> 2）每个小组将实验代码、输出文件和实验报告打包为小组编号-大作业-深度学习.rar（或.zip），提交到链接https://yunbiz.wps.cn/c/collect/cELerW72kpT中。报告提交的截止日期为**2026年1月23日23:59:59**。
+>
+> 3）实验评分标准为比赛得分情况和报告撰写质量。报告中需要包含所有模型在比赛平台上的测评结果截图。
+>
+> **赛题三：医疗诊疗对话意图识别挑战赛**
+>
+> 比赛链接：https://tianchi.aliyun.com/competition/entrance/532044/information
+>
+> 比赛梗概：识别医患对话的意图
+>
+> 实验要求：
+>
+> 1）阅读并运行比赛页面赛题与数据章节给出的至少两个baseline代码，并在实验报告中说明所使用baseline的原理。
+>
+> 2）将baseline中的模型简单改为其他的任意一个语言模型（例如RoBERTa、ALBERT、GPT2等），比较其性能。
+>
+> 3）根据深度学习课程所学，基于深度学习自行设计一个模型并计算结果。请在实验报告中说明设计思路。
+
 ## 1 Progress
 
 - [x] Baseline-1 TextCNN
@@ -93,3 +115,17 @@ python task4\DNN-DAC\run.py --model New_Model
 ### 2.4 @Chen
 
 - 后续完成报告撰写......
+
+
+
+## 3 注意
+
+> [!Important]
+>
+> 1. 复现模型 [ TextCNN、TextRCNN（要求1）]、替换模型 [ Model_Change （要求2）] 及新模型 [ New_Model （要求3）] 文件位于`task4\DNN-DAC\models`文件夹中。
+> 2. 数据集文件夹为`task4\IMCS-DAC。
+> 3. 预处理数据位于`task4\DNN-DAC\THUCNews\data`文件夹中。
+> 4. 输出用于测评的json文件位于`task4\DNN-DAC\THUCNews\log`中。
+> 5. 由于模型权重文件较大，暂未上传。
+> 6. `run.py`为入口文件，命令等详见上方Log。
+> 7. 确保相关环境配置等无误代码可正确执行。
