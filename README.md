@@ -30,7 +30,7 @@ The Task of DL-Final.
 - [x] Baseline-2 TextRCNN
 - [x] Model-Change
 - [x] New-Model
-- [ ] Report
+- [x] Report
 
 ## 2 Log
 
@@ -112,9 +112,9 @@ python task4\DNN-DAC\run.py --model New_Model
 
 <img src="temp/image_New_Model.png" alt="alt text" style="zoom:50%;" />
 
-### 2.4 @Chen
+### 2.4 @Chen（@TimeAgent-X）
 
-- 后续完成报告撰写......
+- 已完成报告撰写。
 
 
 
